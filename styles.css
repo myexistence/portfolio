@@ -1,3 +1,41 @@
 body {
-    column-count: 2;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+
+#bio {
+    background-color: #282828;
+    width: 300%;
+    flex-grow: 1;
+}
+main {
+    flex-grow: 3;
+}
+
+#bio #name, #bio #role {
+    text-align: center;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+#getInTouch h3 {
+    text-align: center;
+}
+#getInTouchContainer {
+    display: flex;
+    background-color: #4C454E;
+    border-radius: 10px;
+    width: 205px;
+    padding: 10px;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+#getInTouch .icon {
+    filter: invert(65%) sepia(56%) saturate(7392%) hue-rotate(249deg) brightness(99%) contrast(82%);
 }
