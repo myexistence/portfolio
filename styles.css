@@ -3,16 +3,29 @@ body {
     display: flex;
     flex-direction: row;
     color: white;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
 }
 
 
 #bio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: #282828;
-    width: 300%;
-    flex-grow: 1;
+    flex: 1 1 30%;
+    min-width: 0;  
+    height: 100vh;
+    position: sticky;  
+    top: 0;
+    
 }
 main {
-    flex-grow: 3;
+    flex: 1 1 100%;
+    min-width: 0;
+    
 }
 
 #bio #name, #bio #role {
@@ -34,6 +47,7 @@ main {
     padding: 10px;
     justify-content: space-evenly;
     gap: 25px;
+    align-items: first baseline;
 }
 
 #getInTouch .icon {
