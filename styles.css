@@ -7,19 +7,23 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
+    font-family: 'Roboto Mono';
+    font-weight: 700;
 }
 
 
 #bio {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     background-color: #282828;
     flex: 1 1 30%;
     min-width: 0;  
     height: 100vh;
-    
+    position: sticky;  
     top: 0;
+    align-items: center;
+    overflow: hidden;
     
 }
 main {
@@ -37,20 +41,57 @@ main {
     height: 50px;
     width: 50px;
 }
+#name {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+#role{
+    margin-top: 5px;
+}
 #getInTouch h3 {
     text-align: center;
+    margin-bottom: 0px;
 }
-#getInTouchContainer {
+#getInTouchContainer,#education {
     display: flex;
+    flex-direction: row;
     background-color: #4C454E;
     border-radius: 10px;
-    width: 205px;
+    width: 1rm;
     padding: 10px;
     justify-content: space-evenly;
     gap: 25px;
     align-items: first baseline;
+    box-shadow: 2px 10px 18px #121212 ;
+    margin: 0 10px 50px 10px;
+    
+}
+#technologiesContainer {
+display: flex;
+flex-direction: row;
+background-color: #4C454E;
+border-radius: 10px;
+width: 1rm;
+padding: 10px;
+justify-content: space-evenly;
+gap: 25px;
+align-items: baseline;
+box-shadow: 2px 10px 18px #121212 ;
+margin-bottom: 50px;
+flex-wrap: wrap;
+margin: 0 10px 50px 10px;
+}
+#technologies{
+    text-align: center;
+}
+#technologies h3{
+    margin-bottom: 0;
+}
+#scrollingIcons{
+    display: flex;
+    width: 1rm;
 }
 
-#getInTouch .icon {
+#github,#iconMail {
     filter: invert(65%) sepia(56%) saturate(7392%) hue-rotate(249deg) brightness(99%) contrast(82%);
 }
